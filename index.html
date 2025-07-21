@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <main>
+        <h1>Formulário de Exercícios de Input</h1>
+        <form action="cadastrar.js" autocomplete="off" method="post">
+            <div class="configDiv">
+                <label for="iNomeCompleto">Nome Completo:</label>
+                <input type="text" name="nome-completo" id="iNomeCompleto" required placeholder="Digite seu nome">
+            </div>
+            <div class="configDiv">
+                <label for="iEmail">Email:</label>
+                <input type="email" name="email" id="iEmail" required placeholder="seu.email@exemplo.com">
+            </div>
+            <div class="configDiv">
+                <label for="iSenha">Senha:</label>
+                <input type="password" name="senha" id="iSenha" required placeholder="Crie uma senha" minlength="5" maxlength="10">
+            </div>
+            <div class="configDiv">
+                <label for="iIdade">Idade:</label>
+                <input type="number" name="idade" id="iIdade" required placeholder="Sua idade" min="18">
+            </div>
+            <div class="configDiv">
+                <label for="iMensagem">Sua Mensagem:</label>
+                 <textarea name="mensagem" id="iMensagem"placeholder="Escreva sua mensagem aqui..."></textarea>
+               
+            </div>
+            <div class="checkConfig">
+                <p>Seu Gênero:</p>
+                
+                <label for="iMasculino"><input type="radio" name="masculino" id="iMasculino">Masculino</label>
+                
+                <label for="iFeminino"><input type="radio" name="feminino" id="iFeminino">Feminino</label>
+
+                <label for="iNaoInformar"><input type="radio" name="nao-informar" id="iNaoInformar">Prefiro não informar</label>
+            </div>
+            <div class="checkConfig">
+                <p>Interesses (selecione um ou mais):</p>
+                
+                <label for="iProgramacao"><input type="checkbox" name="programacao" id="iProgramacao">Programação</label>
+
+                <label for="iDesign"><input type="checkbox" name="design" id="iDesign">Design</label>
+
+                <label for="iMarketing"><input type="checkbox" name="marketing" id="iMarketing">Marketing</label>
+
+                <label for="iOutros"><input type="checkbox" name="outros" id="iOutros">Outros</label>
+            </div>
+            <div id="Enviar">
+                <input type="submit" value="Enviar Formulário">
+            </div>
+            <div id="Limpar">
+                <input type="reset" value="Limpar Formulário">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
